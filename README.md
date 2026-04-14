@@ -70,9 +70,15 @@ Ce projet utilise **uv** pour gérer les dépendances et garantir la reproductib
 👉 Installation de uv :
 
 ```bash
+git clone https://github.com/djibrilba38/OPC_Project_02.git
+cd OPC_Project_02
+python3 -m venv .venv
+source .venv/bin/activate
 pip install uv
-
-git clone <https://github.com/djibrilba38/OpenClassroomsProject.git>
-cd <projet01>
-
 uv sync
+
+##Pour télécharger les données :
+uv run python scripts/download_data.py
+
+
+# 🚀  Ready to start 
